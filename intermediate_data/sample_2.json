@@ -1,0 +1,11 @@
+{
+  "id": "sample_2",
+  "goal": "Open the Zoho Meet app , view the scheduled meetings .",
+  "step_instruction": "Go to the Past section",
+  "action": {
+    "action_type": "click",
+    "x": 540,
+    "y": 390
+  },
+  "image_path": "intermediate_data/sample_2.png"
+}
