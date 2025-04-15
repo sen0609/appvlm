@@ -7,7 +7,7 @@ import json
 from android_env.proto.a11y import android_accessibility_forest_pb2
 
 # 读取数据集
-raw_dataset = tf.data.TFRecordDataset("./dataset/android_control/android_control-00000-of-00020", compression_type="GZIP")
+raw_dataset = tf.data.TFRecordDataset("./dataset/android_control/android_control-00011-of-00020", compression_type="GZIP")
 dataset_iterator = tf.compat.v1.data.make_one_shot_iterator(raw_dataset)
 
 example = tf.train.Example.FromString(dataset_iterator.get_next().numpy())
@@ -79,8 +79,8 @@ for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
     goal = features["goal"].bytes_list.value[0].decode("utf-8")
     actions = [json.loads(a.decode("utf-8")) for a in features["actions"].bytes_list.value]
 
-    # 动态获取前面的 actions
-    previous_actions = actions[:i]  # 当前截图对应的所有之前的 actions
+    # 动态获取最近的前5个 actions
+    previous_actions = actions[max(0, i - 5):i]  # 只获取最近的前5个动作
 
     # 为每个截图添加label，label为当前截图的对应action
     label = actions[i] if i < len(actions) else None
@@ -88,7 +88,7 @@ for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
     prompt = {
         "screenshot": screenshot_path,
         "Goal": goal,
-        "Previous Actions": previous_actions,
+        "Previous Actions": previous_actions,  # 仅参考最近5次的actions
         "Label": label  # 当前截图的label
     }
 

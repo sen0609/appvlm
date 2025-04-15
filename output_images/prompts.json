@@ -1,20 +1,202 @@
 [
     {
         "screenshot": "output_images/screenshot_0.png",
-        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
         "Previous Actions": [],
         "Label": {
             "action_type": "open_app",
-            "app_name": "Zoho Meeting"
+            "app_name": "TickTick"
         }
     },
     {
         "screenshot": "output_images/screenshot_1.png",
-        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
         "Previous Actions": [
             {
                 "action_type": "open_app",
-                "app_name": "Zoho Meeting"
+                "app_name": "TickTick"
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 544,
+            "y": 369
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_2.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 1021,
+            "y": 201
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_3.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 407,
+            "y": 1399
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_4.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 447,
+            "y": 2216
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_5.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 626,
+            "y": 2264
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_6.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 355,
+            "y": 2247
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_7.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            },
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
             }
         ],
         "Label": {
@@ -22,12 +204,28 @@
         }
     },
     {
-        "screenshot": "output_images/screenshot_2.png",
-        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "screenshot": "output_images/screenshot_8.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
         "Previous Actions": [
             {
-                "action_type": "open_app",
-                "app_name": "Zoho Meeting"
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            },
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
             },
             {
                 "action_type": "wait"
@@ -35,25 +233,135 @@
         ],
         "Label": {
             "action_type": "click",
-            "x": 540,
-            "y": 390
+            "x": 135,
+            "y": 2159
         }
     },
     {
-        "screenshot": "output_images/screenshot_3.png",
-        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "screenshot": "output_images/screenshot_9.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
         "Previous Actions": [
             {
-                "action_type": "open_app",
-                "app_name": "Zoho Meeting"
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            },
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
             },
             {
                 "action_type": "wait"
             },
             {
                 "action_type": "click",
-                "x": 540,
-                "y": 390
+                "x": 135,
+                "y": 2159
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 537,
+            "y": 517
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_10.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            },
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
+            },
+            {
+                "action_type": "wait"
+            },
+            {
+                "action_type": "click",
+                "x": 135,
+                "y": 2159
+            },
+            {
+                "action_type": "click",
+                "x": 537,
+                "y": 517
+            }
+        ],
+        "Label": {
+            "action_type": "input_text",
+            "text": "Dwbscratchid3@google.com"
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_11.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
+            },
+            {
+                "action_type": "wait"
+            },
+            {
+                "action_type": "click",
+                "x": 135,
+                "y": 2159
+            },
+            {
+                "action_type": "click",
+                "x": 537,
+                "y": 517
+            },
+            {
+                "action_type": "input_text",
+                "text": "Dwbscratchid3@google.com"
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 890,
+            "y": 211
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_12.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "wait"
+            },
+            {
+                "action_type": "click",
+                "x": 135,
+                "y": 2159
+            },
+            {
+                "action_type": "click",
+                "x": 537,
+                "y": 517
+            },
+            {
+                "action_type": "input_text",
+                "text": "Dwbscratchid3@google.com"
+            },
+            {
+                "action_type": "click",
+                "x": 890,
+                "y": 211
             }
         ],
         "Label": null
