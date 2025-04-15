@@ -1,0 +1,61 @@
+[
+    {
+        "screenshot": "output_images/screenshot_0.png",
+        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "Previous Actions": [],
+        "Label": {
+            "action_type": "open_app",
+            "app_name": "Zoho Meeting"
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_1.png",
+        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "Zoho Meeting"
+            }
+        ],
+        "Label": {
+            "action_type": "wait"
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_2.png",
+        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "Zoho Meeting"
+            },
+            {
+                "action_type": "wait"
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 540,
+            "y": 390
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_3.png",
+        "Goal": "Open the Zoho Meet app , view the scheduled meetings .",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "Zoho Meeting"
+            },
+            {
+                "action_type": "wait"
+            },
+            {
+                "action_type": "click",
+                "x": 540,
+                "y": 390
+            }
+        ],
+        "Label": null
+    }
+]

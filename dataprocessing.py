@@ -6,9 +6,8 @@ import tensorflow as tf
 import json
 from android_env.proto.a11y import android_accessibility_forest_pb2
 
-print("当前工作目录:", os.getcwd())
-
-raw_dataset = tf.data.TFRecordDataset("./dataset/android_control/android_control-00005-of-00020",compression_type="GZIP")
+# 读取数据集
+raw_dataset = tf.data.TFRecordDataset("./dataset/android_control/android_control-00000-of-00020", compression_type="GZIP")
 dataset_iterator = tf.compat.v1.data.make_one_shot_iterator(raw_dataset)
 
 example = tf.train.Example.FromString(dataset_iterator.get_next().numpy())
@@ -33,6 +32,9 @@ def is_interactive(node):
 screenshots = features["screenshots"].bytes_list.value
 trees_raw = features["accessibility_trees"].bytes_list.value
 trees = [android_accessibility_forest_pb2.AndroidAccessibilityForest().FromString(t) for t in trees_raw]
+
+# 用来存储每个截图和prompt的对应数据
+data = []
 
 # 遍历每一帧 observation
 for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
@@ -66,11 +68,35 @@ for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
             draw.text((b.left + 3, b.top + 2), label, fill="white", font=font)
             count += 1
 
-    # 显示
-   # 用matplotlib保存图片
+    # 保存图像到文件
+    screenshot_path = f"output_images/screenshot_{i}.png"
     plt.figure(figsize=(6, 12))
     plt.imshow(image)
     plt.axis("off")
-    plt.savefig(f"output_images/screenshot_{i}.png")
+    plt.savefig(screenshot_path)
 
+    # 获取文本输入
+    goal = features["goal"].bytes_list.value[0].decode("utf-8")
+    actions = [json.loads(a.decode("utf-8")) for a in features["actions"].bytes_list.value]
 
+    # 动态获取前面的 actions
+    previous_actions = actions[:i]  # 当前截图对应的所有之前的 actions
+
+    # 为每个截图添加label，label为当前截图的对应action
+    label = actions[i] if i < len(actions) else None
+
+    prompt = {
+        "screenshot": screenshot_path,
+        "Goal": goal,
+        "Previous Actions": previous_actions,
+        "Label": label  # 当前截图的label
+    }
+
+    # 将该数据存储到data中
+    data.append(prompt)
+
+# 保存为JSON文件
+with open("output_images/prompts.json", "w") as json_file:
+    json.dump(data, json_file, indent=4)
+
+print("Data saved to 'output_images/prompts.json'")
