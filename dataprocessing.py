@@ -51,7 +51,7 @@ for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
             # 绘制红色边框
             draw.rectangle([(b.left, b.top), (b.right, b.bottom)], outline="red", width=2)
 
-            # 计算文字尺寸并绘制灰色半透明背景
+
             label = str(count)
             if font:
                 text_size = draw.textbbox((0, 0), label, font=font)
@@ -60,11 +60,11 @@ for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
             text_width = text_size[2] - text_size[0]
             text_height = text_size[3] - text_size[1]
 
-            # 创建灰色半透明背景
-            bg_rect = [(b.left, b.top), (b.left + text_width + 6, b.top + text_height + 4)]
-            draw.rectangle(bg_rect, fill=(169, 169, 169, 128))  # 灰色半透明背景
 
-            # 绘制白色文字
+            bg_rect = [(b.left, b.top), (b.left + text_width + 6, b.top + text_height + 4)]
+            draw.rectangle(bg_rect, fill=(169, 169, 169, 128)) 
+
+
             draw.text((b.left + 3, b.top + 2), label, fill="white", font=font)
             count += 1
 
