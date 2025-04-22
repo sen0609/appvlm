@@ -1,0 +1,372 @@
+[
+    {
+        "screenshot": "output_images/screenshot_1.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 544,
+            "y": 369
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 166,
+                "class": "android.widget.TextView",
+                "package": "com.ticktick.task",
+                "text": "Weeding plan",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/title",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_2.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 1021,
+            "y": 201
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 79,
+                "class": "android.widget.ImageView",
+                "package": "com.ticktick.task",
+                "text": "",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/iv_overflow",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_3.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 407,
+            "y": 1399
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 71,
+                "class": "android.widget.TextView",
+                "package": "com.ticktick.task",
+                "text": "Share",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/tv_text_item",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_4.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 447,
+            "y": 2216
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 77,
+                "class": "android.widget.ImageView",
+                "package": "com.ticktick.task",
+                "text": "",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/icon_send_app",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_5.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "open_app",
+                "app_name": "TickTick"
+            },
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 626,
+            "y": 2264
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 69,
+                "class": "android.widget.TextView",
+                "package": "com.ticktick.task",
+                "text": "Copy Link",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/tv_send_app_name",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_6.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 544,
+                "y": 369
+            },
+            {
+                "action_type": "click",
+                "x": 1021,
+                "y": 201
+            },
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 355,
+            "y": 2247
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 14,
+                "class": "android.widget.ImageView",
+                "package": "com.android.systemui",
+                "text": "",
+                "content description": "",
+                "resource name": "com.android.systemui:id/overlay_action_chip_icon",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_8.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 407,
+                "y": 1399
+            },
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            },
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
+            },
+            {
+                "action_type": "wait"
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 135,
+            "y": 2159
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 76,
+                "class": "android.widget.ImageView",
+                "package": "android",
+                "text": "",
+                "content description": "",
+                "resource name": "android:id/icon",
+                "is_clickable": false
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_9.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 447,
+                "y": 2216
+            },
+            {
+                "action_type": "click",
+                "x": 626,
+                "y": 2264
+            },
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
+            },
+            {
+                "action_type": "wait"
+            },
+            {
+                "action_type": "click",
+                "x": 135,
+                "y": 2159
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 537,
+            "y": 517
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 47,
+                "class": "android.widget.EditText",
+                "package": "com.google.android.gm",
+                "text": "",
+                "content description": "",
+                "resource name": "",
+                "is_clickable": true
+            }
+        }
+    },
+    {
+        "screenshot": "output_images/screenshot_11.png",
+        "Goal": "Open TickTick app and share the wedding plan task on dwbscratchid3@google.com through Gmail ",
+        "Previous Actions": [
+            {
+                "action_type": "click",
+                "x": 355,
+                "y": 2247
+            },
+            {
+                "action_type": "wait"
+            },
+            {
+                "action_type": "click",
+                "x": 135,
+                "y": 2159
+            },
+            {
+                "action_type": "click",
+                "x": 537,
+                "y": 517
+            },
+            {
+                "action_type": "input_text",
+                "text": "Dwbscratchid3@google.com"
+            }
+        ],
+        "Label": {
+            "action_type": "click",
+            "x": 890,
+            "y": 211
+        },
+        "Click Action": {
+            "action type": "click",
+            "target element": {
+                "unique_id": 18,
+                "class": "android.widget.Button",
+                "package": "com.google.android.gm",
+                "text": "",
+                "content description": "Send",
+                "resource name": "com.google.android.gm:id/send",
+                "is_clickable": true
+            }
+        }
+    }
+]
