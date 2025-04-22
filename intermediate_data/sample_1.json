@@ -1,9 +1,0 @@
-{
-  "id": "sample_1",
-  "goal": "Open the Zoho Meet app , view the scheduled meetings .",
-  "step_instruction": "Open the Zoho Meet app",
-  "action": {
-    "action_type": "wait"
-  },
-  "image_path": "intermediate_data/sample_1.png"
-}
