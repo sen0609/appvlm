@@ -19,7 +19,7 @@ try:
 except IOError:
     font = None
 
-# 判断是否为可交互控件
+# 判断是否为可交互控件(标注图片筛选)
 def is_interactive(node):
     if hasattr(node, "is_clickable") and node.is_clickable:
         return True
@@ -87,13 +87,10 @@ def find_descendant_with_text(node, all_nodes):
 # 提取结构化信息
 def extract_node_info(node):
     return {
-        "unique_id": node.unique_id,
         "class": node.class_name,
-        "package": node.package_name,
         "text": getattr(node, "text", ""),
         "content description": getattr(node, "content_description", ""),
         "resource name": getattr(node, "view_id_resource_name", ""),
-        "is_clickable": getattr(node, "is_clickable", False),
     }
 
 # 从点击坐标构建 click action
@@ -126,7 +123,6 @@ def convert_click_to_element_action(forest_bytes, x, y):
 
     #print(f"\n🎯 最终选中的节点 ID={final_node.unique_id}, Class={final_node.class_name}")
     return {
-        "action type": "click",
         "target element": extract_node_info(final_node)
     }
 
@@ -179,28 +175,41 @@ for i, (screenshot_bytes, forest) in enumerate(zip(screenshots, trees)):
     goal = features["goal"].bytes_list.value[0].decode("utf-8")
     actions = [json.loads(a.decode("utf-8")) for a in features["actions"].bytes_list.value]
 
-    # 动态获取最近的前5个 actions
-    previous_actions = actions[max(0, i - 5):i]  # 只获取最近的前5个动作
+    prompt = {
+        "screenshot": screenshot_path,
+        "Goal": goal,
+        "Previous Actions": [data[j]["Label"] for j in range(max(0, i - 5), i)],  # 使用前5个Label
+        "Label": {}  # 初始化为空字典，稍后更新
+    }
 
-    # 获取当前截图的 x, y 坐标
-    action = actions[i] if i < len(actions) else None
-    if action and "x" in action and "y" in action:
-        x, y = action["x"], action["y"]
-        # 处理 click 和 long_press
-        if action["action_type"] in ["click", "long_press"]:
+    # 获取当前动作
+    current_action = actions[i] if i < len(actions) else None
+
+    if current_action:
+        label = {
+            "action_type": current_action["action_type"]
+        }
+
+        # 对于 click 和 long_press 动作，将坐标转换为目标 UI 元素
+        if current_action["action_type"] in ["click", "long_press"] and "x" in current_action and "y" in current_action:
+            x, y = current_action["x"], current_action["y"]
             click_action = convert_click_to_element_action(trees_raw[i], x, y)
             if click_action:
-                prompt = {
-                    "screenshot": screenshot_path,
-                    "Goal": goal,
-                    "Previous Actions": previous_actions,  # 仅参考最近5次的actions
-                    "Label": action,  # 当前截图的label
-                    "Click Action": click_action  # 当前点击的目标UI元素信息
-                }
-                data.append(prompt)
+                label["target element"] = click_action["target element"]
+        
+        # 对于其他操作（如 open_app 等），保存所有相关信息
+        else:
+            for key, value in current_action.items():
+                if key != "action_type":  # action_type 已添加
+                    label[key] = value
 
-# 保存为JSON文件
-with open("output_images/prompts_with_click.json", "w") as json_file:
+        prompt["Label"] = label  # 将动作的详细信息添加到 Label 中
+
+    # 将该数据存储到 data 中
+    data.append(prompt)
+
+# 保存为 JSON 文件
+with open("output_images/prompts.json", "w") as json_file:
     json.dump(data, json_file, indent=4)
 
-print("Data saved to 'output_images/prompts_with_click.json'")
+print("Data saved to 'output_images/prompts.json'")

@@ -19,8 +19,12 @@
         ],
         "Label": {
             "action_type": "click",
-            "x": 544,
-            "y": 369
+            "target element": {
+                "class": "android.widget.TextView",
+                "text": "Weeding plan",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/title"
+            }
         }
     },
     {
@@ -33,14 +37,22 @@
             },
             {
                 "action_type": "click",
-                "x": 544,
-                "y": 369
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Weeding plan",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/title"
+                }
             }
         ],
         "Label": {
             "action_type": "click",
-            "x": 1021,
-            "y": 201
+            "target element": {
+                "class": "android.widget.ImageView",
+                "text": "",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/iv_overflow"
+            }
         }
     },
     {
@@ -53,19 +65,31 @@
             },
             {
                 "action_type": "click",
-                "x": 544,
-                "y": 369
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Weeding plan",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/title"
+                }
             },
             {
                 "action_type": "click",
-                "x": 1021,
-                "y": 201
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/iv_overflow"
+                }
             }
         ],
         "Label": {
             "action_type": "click",
-            "x": 407,
-            "y": 1399
+            "target element": {
+                "class": "android.widget.TextView",
+                "text": "Share",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/tv_text_item"
+            }
         }
     },
     {
@@ -78,24 +102,40 @@
             },
             {
                 "action_type": "click",
-                "x": 544,
-                "y": 369
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Weeding plan",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/title"
+                }
             },
             {
                 "action_type": "click",
-                "x": 1021,
-                "y": 201
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/iv_overflow"
+                }
             },
             {
                 "action_type": "click",
-                "x": 407,
-                "y": 1399
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Share",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_text_item"
+                }
             }
         ],
         "Label": {
             "action_type": "click",
-            "x": 447,
-            "y": 2216
+            "target element": {
+                "class": "android.widget.ImageView",
+                "text": "",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/icon_send_app"
+            }
         }
     },
     {
@@ -108,29 +148,49 @@
             },
             {
                 "action_type": "click",
-                "x": 544,
-                "y": 369
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Weeding plan",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/title"
+                }
             },
             {
                 "action_type": "click",
-                "x": 1021,
-                "y": 201
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/iv_overflow"
+                }
             },
             {
                 "action_type": "click",
-                "x": 407,
-                "y": 1399
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Share",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_text_item"
+                }
             },
             {
                 "action_type": "click",
-                "x": 447,
-                "y": 2216
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/icon_send_app"
+                }
             }
         ],
         "Label": {
             "action_type": "click",
-            "x": 626,
-            "y": 2264
+            "target element": {
+                "class": "android.widget.TextView",
+                "text": "Copy Link",
+                "content description": "",
+                "resource name": "com.ticktick.task:id/tv_send_app_name"
+            }
         }
     },
     {
@@ -139,34 +199,58 @@
         "Previous Actions": [
             {
                 "action_type": "click",
-                "x": 544,
-                "y": 369
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Weeding plan",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/title"
+                }
             },
             {
                 "action_type": "click",
-                "x": 1021,
-                "y": 201
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/iv_overflow"
+                }
             },
             {
                 "action_type": "click",
-                "x": 407,
-                "y": 1399
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Share",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_text_item"
+                }
             },
             {
                 "action_type": "click",
-                "x": 447,
-                "y": 2216
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/icon_send_app"
+                }
             },
             {
                 "action_type": "click",
-                "x": 626,
-                "y": 2264
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Copy Link",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_send_app_name"
+                }
             }
         ],
         "Label": {
             "action_type": "click",
-            "x": 355,
-            "y": 2247
+            "target element": {
+                "class": "android.widget.ImageView",
+                "text": "",
+                "content description": "",
+                "resource name": "com.android.systemui:id/overlay_action_chip_icon"
+            }
         }
     },
     {
@@ -175,28 +259,48 @@
         "Previous Actions": [
             {
                 "action_type": "click",
-                "x": 1021,
-                "y": 201
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/iv_overflow"
+                }
             },
             {
                 "action_type": "click",
-                "x": 407,
-                "y": 1399
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Share",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_text_item"
+                }
             },
             {
                 "action_type": "click",
-                "x": 447,
-                "y": 2216
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/icon_send_app"
+                }
             },
             {
                 "action_type": "click",
-                "x": 626,
-                "y": 2264
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Copy Link",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_send_app_name"
+                }
             },
             {
                 "action_type": "click",
-                "x": 355,
-                "y": 2247
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.android.systemui:id/overlay_action_chip_icon"
+                }
             }
         ],
         "Label": {
@@ -209,23 +313,39 @@
         "Previous Actions": [
             {
                 "action_type": "click",
-                "x": 407,
-                "y": 1399
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Share",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_text_item"
+                }
             },
             {
                 "action_type": "click",
-                "x": 447,
-                "y": 2216
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/icon_send_app"
+                }
             },
             {
                 "action_type": "click",
-                "x": 626,
-                "y": 2264
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Copy Link",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_send_app_name"
+                }
             },
             {
                 "action_type": "click",
-                "x": 355,
-                "y": 2247
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.android.systemui:id/overlay_action_chip_icon"
+                }
             },
             {
                 "action_type": "wait"
@@ -233,8 +353,12 @@
         ],
         "Label": {
             "action_type": "click",
-            "x": 135,
-            "y": 2159
+            "target element": {
+                "class": "android.widget.ImageView",
+                "text": "",
+                "content description": "",
+                "resource name": "android:id/icon"
+            }
         }
     },
     {
@@ -243,32 +367,52 @@
         "Previous Actions": [
             {
                 "action_type": "click",
-                "x": 447,
-                "y": 2216
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/icon_send_app"
+                }
             },
             {
                 "action_type": "click",
-                "x": 626,
-                "y": 2264
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Copy Link",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_send_app_name"
+                }
             },
             {
                 "action_type": "click",
-                "x": 355,
-                "y": 2247
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.android.systemui:id/overlay_action_chip_icon"
+                }
             },
             {
                 "action_type": "wait"
             },
             {
                 "action_type": "click",
-                "x": 135,
-                "y": 2159
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "android:id/icon"
+                }
             }
         ],
         "Label": {
             "action_type": "click",
-            "x": 537,
-            "y": 517
+            "target element": {
+                "class": "android.widget.EditText",
+                "text": "",
+                "content description": "",
+                "resource name": ""
+            }
         }
     },
     {
@@ -277,26 +421,42 @@
         "Previous Actions": [
             {
                 "action_type": "click",
-                "x": 626,
-                "y": 2264
+                "target element": {
+                    "class": "android.widget.TextView",
+                    "text": "Copy Link",
+                    "content description": "",
+                    "resource name": "com.ticktick.task:id/tv_send_app_name"
+                }
             },
             {
                 "action_type": "click",
-                "x": 355,
-                "y": 2247
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.android.systemui:id/overlay_action_chip_icon"
+                }
             },
             {
                 "action_type": "wait"
             },
             {
                 "action_type": "click",
-                "x": 135,
-                "y": 2159
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "android:id/icon"
+                }
             },
             {
                 "action_type": "click",
-                "x": 537,
-                "y": 517
+                "target element": {
+                    "class": "android.widget.EditText",
+                    "text": "",
+                    "content description": "",
+                    "resource name": ""
+                }
             }
         ],
         "Label": {
@@ -310,21 +470,33 @@
         "Previous Actions": [
             {
                 "action_type": "click",
-                "x": 355,
-                "y": 2247
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "com.android.systemui:id/overlay_action_chip_icon"
+                }
             },
             {
                 "action_type": "wait"
             },
             {
                 "action_type": "click",
-                "x": 135,
-                "y": 2159
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "android:id/icon"
+                }
             },
             {
                 "action_type": "click",
-                "x": 537,
-                "y": 517
+                "target element": {
+                    "class": "android.widget.EditText",
+                    "text": "",
+                    "content description": "",
+                    "resource name": ""
+                }
             },
             {
                 "action_type": "input_text",
@@ -333,8 +505,12 @@
         ],
         "Label": {
             "action_type": "click",
-            "x": 890,
-            "y": 211
+            "target element": {
+                "class": "android.widget.Button",
+                "text": "",
+                "content description": "Send",
+                "resource name": "com.google.android.gm:id/send"
+            }
         }
     },
     {
@@ -346,13 +522,21 @@
             },
             {
                 "action_type": "click",
-                "x": 135,
-                "y": 2159
+                "target element": {
+                    "class": "android.widget.ImageView",
+                    "text": "",
+                    "content description": "",
+                    "resource name": "android:id/icon"
+                }
             },
             {
                 "action_type": "click",
-                "x": 537,
-                "y": 517
+                "target element": {
+                    "class": "android.widget.EditText",
+                    "text": "",
+                    "content description": "",
+                    "resource name": ""
+                }
             },
             {
                 "action_type": "input_text",
@@ -360,10 +544,14 @@
             },
             {
                 "action_type": "click",
-                "x": 890,
-                "y": 211
+                "target element": {
+                    "class": "android.widget.Button",
+                    "text": "",
+                    "content description": "Send",
+                    "resource name": "com.google.android.gm:id/send"
+                }
             }
         ],
-        "Label": null
+        "Label": {}
     }
 ]
