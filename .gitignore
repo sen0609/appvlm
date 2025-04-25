@@ -1,4 +1,7 @@
 dataset/
 models/
 android_env/
-
+output_images/
+output_prompts/
+output_images_test/
+prompts/
